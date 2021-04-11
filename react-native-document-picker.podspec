@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.authors         = package['author']
   s.source          = { :git => "https://github.com/Elyx0/react-native-document-picker", :tag => "v#{s.version}" }
   s.source_files    = "ios/RNDocumentPicker/*.{h,m}"
-  s.platform        = :ios, "10.0"
-  s.dependency        'React-Core'
+  s.platforms       = { :ios => "10.0", :macos => "10.14" }
+  s.dependency        'React'
 end
